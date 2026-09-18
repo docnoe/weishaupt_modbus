@@ -7,10 +7,10 @@ from typing import Any
 
 from pymodbus import ModbusException
 
-from config.custom_components.weishaupt_modbus.weishaupt_modbus_api.exceptions import (
+from .weishaupt_modbus_api.exceptions import (
     ConnectionFailedError,
 )
-from config.custom_components.weishaupt_modbus.weishaupt_modbus_api.modbus_api import (
+from .weishaupt_modbus_api.modbus_api import (
     WeishauptModbusClient,
 )
 from homeassistant.core import HomeAssistant
