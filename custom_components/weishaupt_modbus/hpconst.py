@@ -1512,14 +1512,12 @@ MODBUS_WW_ITEMS: list[ModbusItem] = [
 
 MODBUS_W2_ITEMS: list[ModbusItem] = [
     ModbusItem( address=34101, name="Status 2. WEZ", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.W2, resultlist=W2_STATUS, translation_key="status_2_wez"),
-    # This is correct. The modbus documentation is wrong.
-    ModbusItem( address=34102, name="Schaltspiele E-Heizung 1", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2, translation_key="schaltsp_e1"),
+    ModbusItem( address=34102, name="Betriebsstunden 2. WEZ", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2, translation_key="schaltsp_e1"),
     # This is always 0. Error of weishaupt on modbus. The modbus documentation is wrong.
-    ModbusItem( address=34103, name="Betriebsstunden E1", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2,params = PARAMS_TIME_H, translation_key="betriebss_e1"),
+    ModbusItem( address=34103, name="Schaltspiele 2. WEZ", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2,params = PARAMS_TIME_H, translation_key="betriebss_e1"),
     ModbusItem( address=34104, name="Status E-Heizung 1", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.W2, resultlist=W2_STATUS, translation_key="status_e1"),
     ModbusItem( address=34105, name="Status E-Heizung 2", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.W2, resultlist=W2_STATUS, translation_key="status_e2"),
-    # This is correct. The modbus documentation is wrong.
-    ModbusItem( address=34106, name="Schaltspiele E-Heizung 2", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2, translation_key="schaltsp_e2"),
+    ModbusItem( address=34106, name="Betriebsstunden E-Heizung 1", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2, translation_key="schaltsp_e2"),
    # This is always 0. Error of weishaupt on modbus. The modbus documentation is wrong.
     ModbusItem( address=34107, name="Betriebsstunden E2", mformat=FORMATS.NUMBER, mtype=TYPES.SENSOR, device=DEVICES.W2, params = PARAMS_TIME_H, translation_key="betriebss_e2"),
     ModbusItem( address=44101, name="W2_Konfiguration", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.W2, resultlist=W2_KONFIG, translation_key="w2_konf"),
@@ -1574,10 +1572,10 @@ MODBUS_ST_ITEMS: list[ModbusItem] = [
 MODBUS_IO_ITEMS: list[ModbusItem] = [
     ModbusItem( address=35101, name="SG-Ready 1", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="sgr1"),
     ModbusItem( address=35102, name="SG-Ready 2", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="sgr2"),
-    ModbusItem( address=35103, name="Ausgang H1.2", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h12"),
-    ModbusItem( address=35104, name="Ausgang H1.3", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h13"),
-    ModbusItem( address=35105, name="Ausgang H1.4", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h14"),
-    ModbusItem( address=35106, name="Ausgang H1.5", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h15"),
+    ModbusItem( address=35103, name="Eingang H1.2", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h12"),
+    ModbusItem( address=35104, name="Eingang H1.3", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h13"),
+    ModbusItem( address=35105, name="Eingang H1.4", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h14"),
+    ModbusItem( address=35106, name="Eingang H1.5", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.IO, translation_key="ausg_h15"),
     ModbusItem( address=35107, name="Eingang DE1", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.IO, resultlist=W2_STATUS, translation_key="eing_de1"),
     ModbusItem( address=35108, name="Eingang DE2", mformat=FORMATS.STATUS, mtype=TYPES.SENSOR, device=DEVICES.IO, resultlist=W2_STATUS, translation_key="eing_de2"),
 

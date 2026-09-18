@@ -724,16 +724,16 @@
         "name": "{prefix}Request(feed regenerative)"
       },
       "ausg_h12": {
-        "name": "{prefix}Output H1.2"
+        "name": "{prefix}Input H1.2"
       },
       "ausg_h13": {
-        "name": "{prefix}Output H1.3"
+        "name": "{prefix}Input H1.3"
       },
       "ausg_h14": {
-        "name": "{prefix}Output H1.4"
+        "name": "{prefix}Input H1.4"
       },
       "ausg_h15": {
-        "name": "{prefix}Output H1.5"
+        "name": "{prefix}Input H1.5"
       },
       "webif_info_heizkreis1_aussentemperatur": {
         "name": "{prefix}Outside temperature"
@@ -978,7 +978,7 @@
         }
       },
       "betriebss_e1": {
-        "name": "{prefix}Operation hours E1"
+        "name": "{prefix}Switching cycles 2nd heat generator"
       },
       "betriebss_e2": {
         "name": "{prefix}Operation hours E2"
@@ -1518,10 +1518,10 @@
         }
       },
       "schaltsp_e1": {
-        "name": "{prefix}Switching cycles E-heating 1"
+        "name": "{prefix}Operation hours 2nd heat generator"
       },
       "schaltsp_e2": {
-        "name": "{prefix}Switching cycles E-heating 2"
+        "name": "{prefix}Operation hours E-heating 1"
       },
       "sgr1": {
         "name": "{prefix}SG-Ready 1"

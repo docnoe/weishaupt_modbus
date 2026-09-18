@@ -724,16 +724,16 @@
                 "name": "{prefix}Anforderung(Vorlauf regenerativ)"
             },
             "ausg_h12": {
-                "name": "{prefix}Ausgang H1.2"
+                "name": "{prefix}Eingang H1.2"
             },
             "ausg_h13": {
-                "name": "{prefix}Ausgang H1.3"
+                "name": "{prefix}Eingang H1.3"
             },
             "ausg_h14": {
-                "name": "{prefix}Ausgang H1.4"
+                "name": "{prefix}Eingang H1.4"
             },
             "ausg_h15": {
-                "name": "{prefix}Ausgang H1.5"
+                "name": "{prefix}Eingang H1.5"
             },
             "webif_info_heizkreis1_aussentemperatur": {
                 "name": "{prefix}Außentemperatur"
@@ -978,7 +978,7 @@
                 }
             },
             "betriebss_e1": {
-                "name": "{prefix}Betriebsstunden E1"
+                "name": "{prefix}Schaltspiele 2. WEZ"
             },
             "betriebss_e2": {
                 "name": "{prefix}Betriebsstunden E2"
@@ -1518,10 +1518,10 @@
                 }
             },
             "schaltsp_e1": {
-                "name": "{prefix}Schaltspiele E-Heizung 1"
+                "name": "{prefix}Betriebsstunden 2. WEZ"
             },
             "schaltsp_e2": {
-                "name": "{prefix}Schaltspiele E-Heizung 2"
+                "name": "{prefix}Betriebsstunden E-Heizung 1"
             },
             "sgr1": {
                 "name": "{prefix}SG-Ready 1"
